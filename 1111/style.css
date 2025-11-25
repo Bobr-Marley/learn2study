@@ -1,0 +1,109 @@
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 1em;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 1;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 1em; 
+}
+
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    color: navy;
+    display: flex;
+    justify-content: center;
+
+    position: relative; /* Container needs relative positioning */
+    display: inline-block; /* Helps wrap the container around the image */
+    max-width: 100%; /* Example width */
+    margin: auto;
+    
+    font-size: x-large;
+    color: navy;
+}
+
+.content img {
+    width: 80%;
+    filter: grayscale(1);
+    display: block;
+    width: 80%; /* Image fills the container width */
+    height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+.content p {
+    position: absolute; /* Positions text relative to its container */
+    top: 0;
+    right: 10%;
+    width: 40%;
+    height: 95%; /* Set a specific height for the scrollable area */
+    overflow: scroll; /* Enables vertical scrolling for overflow content */
+    scrollbar-width: none;
+
+    padding: 15px;
+    box-sizing: border-box; /* Ensures padding is included in the width/height calculation */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 1em;
+    border: 1em;
+    margin: auto;
+}
+
+.image-container {
+    position: relative; /* Container needs relative positioning */
+    display: inline-block; /* Helps wrap the container around the image */
+    max-width: 100%; /* Example width */
+    justify-items: center;
+    margin: auto;
+    filter: grayscale(1);
+}
+
+.image-container img {
+    display: block;
+    width: 100%; /* Image fills the container width */
+    height: auto;
+    justify-content: center;
+    margin: auto;
+}
+
+.scrollable-text-overlay {
+    position: absolute; /* Positions text relative to its container */
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%; /* Set a specific height for the scrollable area */
+    overflow: scroll; /* Enables vertical scrolling for overflow content */
+    scrollbar-width: none;
+    font-size: x-large;
+    color: navy;
+    padding: 15px;
+    box-sizing: border-box; /* Ensures padding is included in the width/height calculation */
+}
