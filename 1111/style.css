@@ -30,39 +30,29 @@
 }
 
 .content {
-    font-family: 'Times New Roman', Times, serif;
-    color: navy;
-    display: flex;
-    justify-content: center;
-
-    position: relative; /* Container needs relative positioning */
-    display: inline-block; /* Helps wrap the container around the image */
-    max-width: 100%; /* Example width */
-    margin: auto;
-    
-    font-size: x-large;
-    color: navy;
+    position: relative;
+    justify-self: center;
+    /*display: inline-block;*/
 }
 
-.content img {
-    width: 80%;
+.content-img {
     filter: grayscale(1);
-    display: block;
-    width: 80%; /* Image fills the container width */
-    height: auto;
-    justify-content: center;
-    margin: auto;
+    /*display: block;*/
 }
 
-.content p {
+.content-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: navy;
     position: absolute; /* Positions text relative to its container */
     top: 0;
-    right: 10%;
-    width: 40%;
-    height: 95%; /* Set a specific height for the scrollable area */
+    right: 0;
+    width: 50%;
+    height: 100%; /* Set a specific height for the scrollable area */
     overflow: scroll; /* Enables vertical scrolling for overflow content */
     scrollbar-width: none;
-
+    font-size: x-large;
+    color: navy;
     padding: 15px;
     box-sizing: border-box; /* Ensures padding is included in the width/height calculation */
 }
