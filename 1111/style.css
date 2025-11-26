@@ -32,29 +32,27 @@
 .content {
     position: relative;
     justify-self: center;
-    /*display: inline-block;*/
+  
 }
 
 .content-img {
     filter: grayscale(1);
-    /*display: block;*/
+    
 }
 
 .content-text {
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     color: navy;
-    position: absolute; /* Positions text relative to its container */
+    position: absolute; 
     top: 0;
     right: 0;
     width: 50%;
-    height: 100%; /* Set a specific height for the scrollable area */
-    overflow: scroll; /* Enables vertical scrolling for overflow content */
+    height: 98%; 
+    overflow: scroll;
     scrollbar-width: none;
-    font-size: x-large;
-    color: navy;
     padding: 15px;
-    box-sizing: border-box; /* Ensures padding is included in the width/height calculation */
+    box-sizing: border-box; 
 }
 
 .gallery {
@@ -67,33 +65,5 @@
     margin: auto;
 }
 
-.image-container {
-    position: relative; /* Container needs relative positioning */
-    display: inline-block; /* Helps wrap the container around the image */
-    max-width: 100%; /* Example width */
-    justify-items: center;
-    margin: auto;
-    filter: grayscale(1);
-}
 
-.image-container img {
-    display: block;
-    width: 100%; /* Image fills the container width */
-    height: auto;
-    justify-content: center;
-    margin: auto;
-}
 
-.scrollable-text-overlay {
-    position: absolute; /* Positions text relative to its container */
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%; /* Set a specific height for the scrollable area */
-    overflow: scroll; /* Enables vertical scrolling for overflow content */
-    scrollbar-width: none;
-    font-size: x-large;
-    color: navy;
-    padding: 15px;
-    box-sizing: border-box; /* Ensures padding is included in the width/height calculation */
-}
