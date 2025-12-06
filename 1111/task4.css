@@ -1,0 +1,33 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content-img {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20 px;
+}
+
+figcaption {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20 px;   
+}
+
+@media (max-width: 720px) {
+    .content {
+    flex-direction: column;
+}
+}
